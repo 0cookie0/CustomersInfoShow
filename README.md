@@ -1,0 +1,4 @@
+# CustomersInfoShow
+客户信息管理系统模板,基于springBoot,用mybatis-plus实现service,dao,有简单增删改查功能,有简单登录注册功能
+这里用到的两个表已经放到Code下面了,在application.yml下面更改数据库信息数据库信息,两个表放在同一个database下即可,由于sql里面并不包含数据,所以要先进行数据添加,
+然后运行SpringBoot的启动类CustomerApplication就可以了
