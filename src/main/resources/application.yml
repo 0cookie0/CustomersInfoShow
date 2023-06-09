@@ -1,0 +1,26 @@
+#数据源信息配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/javaee?serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: 123456
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+
+#端口号配置
+server:
+  port: 80
+
+#mp设置id策略
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    #标准输出mp运行日志,上线运行时要关闭
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
